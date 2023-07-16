@@ -1,0 +1,233 @@
+/* Remove the switch class styles */
+.theme-toggle {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 9999;
+}
+
+/* Update the button styles */
+.theme-toggle button {
+    padding: 5px 10px;
+    font-size: 14px;
+    background-color: #ccc;
+    color: #000;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.4s;
+}
+
+.theme-toggle button:hover {
+    background-color: #0e7bae;
+    color: #fff;
+}
+
+/* Update the button styles for the dark theme */
+.dark-theme .theme-toggle button {
+    background-color: #333;
+    color: #fff;
+}
+
+/* Add any additional CSS styles for your webpage as needed */
+
+
+/* Add any additional CSS styles for your webpage as needed */
+
+
+
+
+
+
+
+/*for homepage */
+/* Additional CSS to position the navbar-canvas */
+.navbar-canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 200px;
+    background-color: rgb(128, 119, 119);
+    z-index: 1000;
+    transform: translateX(-100%);
+    transition: transform 0.5s ease;
+
+}
+
+.navbar-canvas.active {
+    transform: translateX(0);
+}
+
+.navbar-canvas-content {
+    padding: 20px;
+}
+
+.navbar-icon {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    font-size: 24px;
+    color: #333;
+    cursor: pointer;
+}
+
+.closebtn {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 24px;
+    color: #333;
+    cursor: pointer;
+}
+
+/* Additional Styles for Attractive Navbar */
+.navbar-canvas-content ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar-canvas-content ul li {
+    margin-bottom: 10px;
+}
+
+.navbar-canvas-content ul li a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    transition: color 0.2s ease;
+}
+
+.navbar-canvas-content ul li a:hover {
+    color: #ff6b6b;
+}
+
+.navbar-canvas-content .logo {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.navbar-canvas-content .logo img {
+    width: auto;
+    height: auto;
+}
+
+/* Beautiful Background */
+.navbar-canvas-content {
+    background-image: black;
+}
+
+.container-home {
+    text-align: center;
+    align-items: center;
+    margin: 200px auto;
+    width: 500px;
+}
+
+
+
+.welcome-message {
+    color: black;
+    text-align: center;
+    margin-top: 200px;
+    font-size: 30px;
+
+}
+
+.get-started-button a {
+    text-align: center;
+    margin-top: 20px;
+    border-radius: 25px;
+
+}
+
+
+.container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.register-form {
+    max-width: 400px;
+    padding: 20px;
+    background: #ffffff;
+}
+
+.register-form .form-control {
+    margin-bottom: 20px;
+}
+
+.register-form .text-center {
+    margin-top: 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.heading {
+    margin-bottom: 20px;
+}
+
+/* gallery.html */
+.image-label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image-label img {
+    max-width: 100%;
+    margin-bottom: 10px;
+}
+
+.form-control {
+    position: relative;
+    margin: 20px 0 40px;
+    width: 190px;
+}
+
+.form-control input {
+    background-color: transparent;
+    border: 0;
+    border-bottom: 2px #fff solid;
+    display: block;
+    width: 100%;
+    padding: 15px 0;
+    font-size: 18px;
+    color: #fff;
+}
+
+.form-control input:focus,
+.form-control input:valid {
+    outline: 0;
+    border-bottom-color: lightblue;
+}
+
+.form-control label {
+    position: absolute;
+    top: 15px;
+    left: 0;
+    pointer-events: none;
+}
+
+.form-control label span {
+    display: inline-block;
+    font-size: 18px;
+    min-width: 5px;
+    color: #fff;
+    transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.form-control input:focus+label span,
+.form-control input:valid+label span {
+    color: lightblue;
+    transform: translateY(-30px);
+}
